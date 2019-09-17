@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Dhruv Sandesara\Desktop\Lab3-master\Lab3-master\Lab3.uvproj
+Project File Date:  02/12/2018
+
+<h2>Output:</h2>
+Rebuild target 'Lab3'
+compiling PLL.c...
+compiling ST7735.c...
+assembling startup.s...
+compiling fixed.c...
+fixed.c(274): warning:  #223-D: function "abs" declared implicitly
+        maxX_value = maxX + abs(minx_16);
+fixed.c(249): warning:  #550-D: variable "minw_16" was set but never used
+        int16_t minw_16;
+fixed.c(250): warning:  #550-D: variable "minh_16" was set but never used
+        int16_t minh_16;
+fixed.c: 3 warnings, 0 errors
+compiling Lab3_Stop.c...
+Lab3_Stop.c(96): warning:  #223-D: function "DisableInterrupts" declared implicitly
+    DisableInterrupts();
+Lab3_Stop.c(1171): warning:  #223-D: function "EnableInterrupts" declared implicitly
+          EnableInterrupts();
+Lab3_Stop.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=6622 RO-data=2050 RW-data=60 ZI-data=1132  
+".\Lab1.axf" - 0 Error(s), 5 Warning(s).
+Load "C:\\Users\\Dhruv Sandesara\\Desktop\\Lab3-master\\Lab3-master\\Lab1.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
+Lab3_Stop.c(129): error:  #20: identifier "alarm_on_flag" is undefined
+                alarm_on_flag = 1;
+Lab3_Stop.c(1171): warning:  #223-D: function "EnableInterrupts" declared implicitly
+          EnableInterrupts();
+Lab3_Stop.c(1225): error:  #20: identifier "alarm_on_flag" is undefined
+        if( alarm_on_flag == 1){
+Lab3_Stop.c(1226): error:  #20: identifier "snooze_flag" is undefined
+                snooze_flag = 1;
+Lab3_Stop.c: 2 warnings, 7 errors
+".\Lab1.axf" - 7 Error(s), 5 Warning(s).
+Target not created
+dentifier "snooze_flag" is undefined
+                snooze_flag = 1;
+Lab3_Stop.c: 2 warnings, 7 errors
+".\Lab1.axf" - 8 Error(s), 5 Warning(s).
+Target not created

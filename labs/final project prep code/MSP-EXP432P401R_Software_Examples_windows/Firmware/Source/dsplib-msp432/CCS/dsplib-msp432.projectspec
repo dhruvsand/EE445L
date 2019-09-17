@@ -1,0 +1,11 @@
+<projectSpec>
+  <project
+    outputType="staticLibrary"
+    compilerBuildOptions='-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -I${PROJECT_ROOT} -I${PROJECT_ROOT}/CMSIS/Include --gcc --define=__MSP432P401R__ --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 --define=_LINKAGE --define=_CODE_ACCESS="" --define=_DATA_ACCESS="" --define=TARGET_IS_MSP432P4XX --define=ccs --gen_func_subsections=on --ual'
+    device="Cortex M.MSP432P401R"
+    name="dsplib-msp432"
+    enableHexTool="true"
+    ignoreDefaultDeviceSettings="true" >
+    <file action="copy" path="../CMSIS" />
+  </project>
+</projectSpec>

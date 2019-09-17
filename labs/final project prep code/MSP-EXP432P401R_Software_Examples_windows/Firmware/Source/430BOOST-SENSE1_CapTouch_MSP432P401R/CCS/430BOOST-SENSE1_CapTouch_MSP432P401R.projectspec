@@ -1,0 +1,16 @@
+<projectSpec>
+  <project compilerBuildOptions="-I${PROJECT_ROOT} -I${PROJECT_ROOT}/CTSLibrary -I${PROJECT_ROOT}/driverlib/MSP432P4xx" device="Cortex M.MSP432P401R" name="430BOOST-SENSE1_CapTouch_MSP432P401R" linkerCommandFile="msp432p401r.cmd">
+
+    <file action="copy" path="../CapTouchBoosterPack_UserExperience.c" openOnCreation="true" />
+    <file action="copy" path="../structure.c" />
+    <file action="copy" path="../structure.h" />
+	<file action="copy" path="../uart.c" />
+	<file action="copy" path="../uart.h" />
+	<file action="copy" path="startup_msp432p401r_ccs.c" overwriteExisting="true" />
+	<file action="copy" path="../driverlib" excludeFromBuild="true" />
+	<file action="copy" path="../driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" />
+	<file action="copy" path="../system_msp432p401r.c" overwriteExisting="true" />
+
+    <file action="copy" path="../CTSLibrary" />
+  </project>
+</projectSpec>

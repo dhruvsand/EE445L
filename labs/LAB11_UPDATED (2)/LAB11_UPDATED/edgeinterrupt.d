@@ -1,0 +1,10 @@
+.\edgeinterrupt.o: EdgeInterrupt.c
+.\edgeinterrupt.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\edgeinterrupt.o: ..\../inc/tm4c123gh6pm.h
+.\edgeinterrupt.o: coeff.h
+.\edgeinterrupt.o: PLL.h
+.\edgeinterrupt.o: ECG.h
+.\edgeinterrupt.o: SSD2119.h
+.\edgeinterrupt.o: Buttons.h
+.\edgeinterrupt.o: ACCEL.h
+.\edgeinterrupt.o: ADCT0ATrigger.h

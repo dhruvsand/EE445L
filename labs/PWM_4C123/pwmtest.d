@@ -1,0 +1,10 @@
+.\pwmtest.o: PWMtest.c
+.\pwmtest.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\pwmtest.o: PLL.h
+.\pwmtest.o: PWM.h
+.\pwmtest.o: Tach.h
+.\pwmtest.o: SysTick.h
+.\pwmtest.o: SSD2119.h
+.\pwmtest.o: motor.h
+.\pwmtest.o: Timer0A.h
+.\pwmtest.o: switch.h

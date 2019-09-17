@@ -1,0 +1,625 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Professional]
+
+==============================================================================
+
+Section Cross References
+
+    startup.o(RESET) refers to startup.o(STACK) for StackMem
+    startup.o(RESET) refers to ssd2119.o(i.GPIOPortA_Handler) for GPIOPortA_Handler
+    startup.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    ssd2119.o(i.LCD_ColorFill) refers to ssd2119.o(i.LCD_DrawFilledRect) for LCD_DrawFilledRect
+    ssd2119.o(i.LCD_DrawBMP) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_DrawBMP) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_DrawBMP) refers to ssd2119.o(.constdata) for .constdata
+    ssd2119.o(i.LCD_DrawCircle) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_DrawFilledCircle) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_DrawFilledRect) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_DrawFilledRect) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_DrawImage) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_DrawImage) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_DrawLine) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_DrawPixel) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_DrawPixel) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_DrawPixelRGB) refers to ssd2119.o(i.convertColor) for convertColor
+    ssd2119.o(i.LCD_DrawPixelRGB) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_DrawRect) refers to ssd2119.o(i.LCD_DrawLine) for LCD_DrawLine
+    ssd2119.o(i.LCD_Goto) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_GPIOInit) for LCD_GPIOInit
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_SetTextColor) for LCD_SetTextColor
+    ssd2119.o(i.LCD_PrintBinary) refers to ssd2119.o(i.LCD_PrintString) for LCD_PrintString
+    ssd2119.o(i.LCD_PrintBinary) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_PrintChar) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    ssd2119.o(i.LCD_PrintChar) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_PrintChar) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.LCD_PrintChar) refers to ssd2119.o(.constdata) for .constdata
+    ssd2119.o(i.LCD_PrintFloat) refers to f2d.o(.text) for __aeabi_f2d
+    ssd2119.o(i.LCD_PrintFloat) refers to ssd2119.o(i.printf) for printf
+    ssd2119.o(i.LCD_PrintFloat) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_PrintHex) refers to ssd2119.o(i.LCD_PrintString) for LCD_PrintString
+    ssd2119.o(i.LCD_PrintHex) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_PrintInteger) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_PrintString) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_SetCursor) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.LCD_SetTextColor) refers to ssd2119.o(i.convertColor) for convertColor
+    ssd2119.o(i.LCD_SetTextColor) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.Touch_BeginWaitForTouch) refers to startup.o(.text) for DisableInterrupts
+    ssd2119.o(i.Touch_GetCoords) refers to memcpya.o(.text) for __aeabi_memcpy4
+    ssd2119.o(i.Touch_GetCoords) refers to ssd2119.o(.constdata) for .constdata
+    ssd2119.o(i.Touch_GetCoords) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.Touch_Init) refers to ssd2119.o(i.ADC_Init) for ADC_Init
+    ssd2119.o(i.Touch_ReadX) refers to ssd2119.o(i.ADC_SetChannel) for ADC_SetChannel
+    ssd2119.o(i.Touch_ReadX) refers to ssd2119.o(i.ADC_Read) for ADC_Read
+    ssd2119.o(i.Touch_ReadX) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.Touch_ReadY) refers to ssd2119.o(i.ADC_SetChannel) for ADC_SetChannel
+    ssd2119.o(i.Touch_ReadY) refers to ssd2119.o(i.ADC_Read) for ADC_Read
+    ssd2119.o(i.Touch_ReadY) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.Touch_ReadZ1) refers to ssd2119.o(i.ADC_SetChannel) for ADC_SetChannel
+    ssd2119.o(i.Touch_ReadZ1) refers to ssd2119.o(i.ADC_Read) for ADC_Read
+    ssd2119.o(i.Touch_ReadZ2) refers to ssd2119.o(i.ADC_SetChannel) for ADC_SetChannel
+    ssd2119.o(i.Touch_ReadZ2) refers to ssd2119.o(i.ADC_Read) for ADC_Read
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintInteger) for LCD_PrintInteger
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintString) for LCD_PrintString
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintFloat) for LCD_PrintFloat
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintHex) for LCD_PrintHex
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintBinary) for LCD_PrintBinary
+    random.o(.text) refers to random.o(DATA) for M
+    lcdtestmain.o(i.BWWaitFill) refers to ssd2119.o(i.convertColor) for convertColor
+    lcdtestmain.o(i.BWWaitFill) refers to ssd2119.o(i.LCD_ColorFill) for LCD_ColorFill
+    lcdtestmain.o(i.BWWaitFill) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.BlastChars) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcdtestmain.o(i.BlastChars) refers to random.o(.text) for Random
+    lcdtestmain.o(i.BlastChars) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    lcdtestmain.o(i.LineSpin) refers to random.o(.text) for Random
+    lcdtestmain.o(i.LineSpin) refers to ssd2119.o(i.convertColor) for convertColor
+    lcdtestmain.o(i.LineSpin) refers to ssd2119.o(i.LCD_DrawLine) for LCD_DrawLine
+    lcdtestmain.o(i.LineSpin) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.MovingColorBars) refers to ssd2119.o(i.LCD_DrawPixelRGB) for LCD_DrawPixelRGB
+    lcdtestmain.o(i.MovingColorBars) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.PrintAsciiChars) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcdtestmain.o(i.PrintAsciiChars) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    lcdtestmain.o(i.Random4BPPTestSprite) refers to random.o(.text) for Random
+    lcdtestmain.o(i.Random4BPPTestSprite) refers to ssd2119.o(i.LCD_DrawImage) for LCD_DrawImage
+    lcdtestmain.o(i.Random4BPPTestSprite) refers to lcdtestmain.o(.constdata) for .constdata
+    lcdtestmain.o(i.RandomCircle) refers to random.o(.text) for Random
+    lcdtestmain.o(i.RandomCircle) refers to ssd2119.o(i.LCD_DrawFilledCircle) for LCD_DrawFilledCircle
+    lcdtestmain.o(i.RandomColorFill) refers to random.o(.text) for Random
+    lcdtestmain.o(i.RandomColorFill) refers to ssd2119.o(i.convertColor) for convertColor
+    lcdtestmain.o(i.RandomColorFill) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    lcdtestmain.o(i.RandomRectangles) refers to random.o(.text) for Random
+    lcdtestmain.o(i.RandomRectangles) refers to ssd2119.o(i.convertColor) for convertColor
+    lcdtestmain.o(i.RandomRectangles) refers to ssd2119.o(i.LCD_DrawRect) for LCD_DrawRect
+    lcdtestmain.o(i.TestStringOutput) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcdtestmain.o(i.TestStringOutput) refers to ssd2119.o(i.LCD_PrintString) for LCD_PrintString
+    lcdtestmain.o(i.TestStringOutput) refers to lcdtestmain.o(.constdata) for .constdata
+    lcdtestmain.o(i.charTest) refers to ssd2119.o(i.LCD_Goto) for LCD_Goto
+    lcdtestmain.o(i.charTest) refers to ssd2119.o(i.printf) for printf
+    lcdtestmain.o(i.main) refers to pll.o(i.PLL_Init) for PLL_Init
+    lcdtestmain.o(i.main) refers to ssd2119.o(i.LCD_Init) for LCD_Init
+    lcdtestmain.o(i.main) refers to random.o(.text) for Random_Init
+    lcdtestmain.o(i.main) refers to ssd2119.o(i.Touch_Init) for Touch_Init
+    lcdtestmain.o(i.main) refers to lcdtestmain.o(i.RandomRectangles) for RandomRectangles
+    lcdtestmain.o(i.main) refers to ssd2119.o(i.convertColor) for convertColor
+    lcdtestmain.o(i.main) refers to ssd2119.o(i.LCD_ColorFill) for LCD_ColorFill
+    lcdtestmain.o(i.main) refers to lcdtestmain.o(i.MovingColorBars) for MovingColorBars
+    lcdtestmain.o(i.main) refers to lcdtestmain.o(i.LineSpin) for LineSpin
+    lcdtestmain.o(i.main) refers to lcdtestmain.o(i.printfTest) for printfTest
+    lcdtestmain.o(i.main) refers to lcdtestmain.o(i.RandomCircle) for RandomCircle
+    lcdtestmain.o(i.main) refers to lcdtestmain.o(i.Random4BPPTestSprite) for Random4BPPTestSprite
+    lcdtestmain.o(i.printfTest) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcdtestmain.o(i.printfTest) refers to ssd2119.o(i.printf) for printf
+    lcdtestmain.o(i.printfTest) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.sizeofStuff) refers to ssd2119.o(i.printf) for printf
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.Touch_ReadY) for Touch_ReadY
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.Touch_ReadX) for Touch_ReadX
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.Touch_ReadZ1) for Touch_ReadZ1
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.Touch_GetCoords) for Touch_GetCoords
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.LCD_Goto) for LCD_Goto
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.printf) for printf
+    lcdtestmain.o(i.touchDebug) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.touchDebug) refers to lcdtestmain.o(.constdata) for .constdata
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to lcdtestmain.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to lcdtestmain.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup.o(HEAP), (0 bytes).
+    Removing startup.o(.text), (28 bytes).
+    Removing ssd2119.o(i.ADC_Read), (28 bytes).
+    Removing ssd2119.o(i.ADC_SetChannel), (48 bytes).
+    Removing ssd2119.o(i.LCD_DrawBMP), (340 bytes).
+    Removing ssd2119.o(i.LCD_DrawCircle), (246 bytes).
+    Removing ssd2119.o(i.LCD_Goto), (24 bytes).
+    Removing ssd2119.o(i.Touch_BeginWaitForTouch), (168 bytes).
+    Removing ssd2119.o(i.Touch_GetCoords), (80 bytes).
+    Removing ssd2119.o(i.Touch_ReadX), (224 bytes).
+    Removing ssd2119.o(i.Touch_ReadY), (200 bytes).
+    Removing ssd2119.o(i.Touch_ReadZ1), (184 bytes).
+    Removing ssd2119.o(i.Touch_ReadZ2), (200 bytes).
+    Removing ssd2119.o(i.abs), (8 bytes).
+    Removing ssd2119.o(.data), (1 bytes).
+    Removing lcdtestmain.o(i.BWWaitFill), (72 bytes).
+    Removing lcdtestmain.o(i.BlastChars), (32 bytes).
+    Removing lcdtestmain.o(i.PrintAsciiChars), (28 bytes).
+    Removing lcdtestmain.o(i.RandomColorFill), (58 bytes).
+    Removing lcdtestmain.o(i.TestStringOutput), (24 bytes).
+    Removing lcdtestmain.o(i.charTest), (28 bytes).
+    Removing lcdtestmain.o(i.sizeofStuff), (200 bytes).
+    Removing lcdtestmain.o(i.touchDebug), (68 bytes).
+    Removing lcdtestmain.o(.data), (4 bytes).
+    Removing lcdtestmain.o(.data), (4 bytes).
+
+25 unused section(s) (total 2297 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      660  startup.o(RESET)
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
+    LCDTestMain.c                            0x00000000   Number         0  lcdtestmain.o ABSOLUTE
+    PLL.c                                    0x00000000   Number         0  pll.o ABSOLUTE
+    SSD2119.c                                0x00000000   Number         0  ssd2119.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    random.s                                 0x00000000   Number         0  random.o ABSOLUTE
+    startup.s                                0x00000000   Number         0  startup.o ABSOLUTE
+    $v0                                      0x0000026c   Number         0  startup.o(RESET)
+    .ARM.Collect$$$$00000000                 0x00000294   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000294   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000298   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x0000029c   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x0000029c   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x0000029c   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x000002a4   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x000002a4   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x000002a4   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x000002a4   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x000002a8   Section       40  random.o(.text)
+    $v0                                      0x000002a8   Number         0  random.o(.text)
+    .text                                    0x000002d0   Section        0  f2d.o(.text)
+    .text                                    0x000002f6   Section        0  iusefp.o(.text)
+    .text                                    0x000002f8   Section       36  init.o(.text)
+    i.ADC_Init                               0x0000031c   Section        0  ssd2119.o(i.ADC_Init)
+    i.GPIOPortA_Handler                      0x00000394   Section        0  ssd2119.o(i.GPIOPortA_Handler)
+    i.LCD_ColorFill                          0x000003a0   Section        0  ssd2119.o(i.LCD_ColorFill)
+    i.LCD_DrawFilledCircle                   0x000003b4   Section        0  ssd2119.o(i.LCD_DrawFilledCircle)
+    i.LCD_DrawFilledRect                     0x00000480   Section        0  ssd2119.o(i.LCD_DrawFilledRect)
+    i.LCD_DrawImage                          0x000004d0   Section        0  ssd2119.o(i.LCD_DrawImage)
+    i.LCD_DrawLine                           0x0000059c   Section        0  ssd2119.o(i.LCD_DrawLine)
+    i.LCD_DrawPixel                          0x0000062c   Section        0  ssd2119.o(i.LCD_DrawPixel)
+    i.LCD_DrawPixelRGB                       0x0000065c   Section        0  ssd2119.o(i.LCD_DrawPixelRGB)
+    i.LCD_DrawRect                           0x0000067c   Section        0  ssd2119.o(i.LCD_DrawRect)
+    i.LCD_GPIOInit                           0x000006cc   Section        0  ssd2119.o(i.LCD_GPIOInit)
+    i.LCD_Init                               0x00000760   Section        0  ssd2119.o(i.LCD_Init)
+    i.LCD_PrintBinary                        0x00000904   Section        0  ssd2119.o(i.LCD_PrintBinary)
+    i.LCD_PrintChar                          0x00000980   Section        0  ssd2119.o(i.LCD_PrintChar)
+    i.LCD_PrintFloat                         0x00000a24   Section        0  ssd2119.o(i.LCD_PrintFloat)
+    i.LCD_PrintHex                           0x00000aa8   Section        0  ssd2119.o(i.LCD_PrintHex)
+    i.LCD_PrintInteger                       0x00000b04   Section        0  ssd2119.o(i.LCD_PrintInteger)
+    i.LCD_PrintString                        0x00000b5e   Section        0  ssd2119.o(i.LCD_PrintString)
+    i.LCD_SetCursor                          0x00000b78   Section        0  ssd2119.o(i.LCD_SetCursor)
+    i.LCD_SetTextColor                       0x00000b84   Section        0  ssd2119.o(i.LCD_SetTextColor)
+    i.LCD_WriteCommand                       0x00000b94   Section        0  ssd2119.o(i.LCD_WriteCommand)
+    i.LCD_WriteData                          0x00000bd4   Section        0  ssd2119.o(i.LCD_WriteData)
+    i.LineSpin                               0x00000c14   Section        0  lcdtestmain.o(i.LineSpin)
+    i.MovingColorBars                        0x00000d10   Section        0  lcdtestmain.o(i.MovingColorBars)
+    i.PLL_Init                               0x00000d74   Section        0  pll.o(i.PLL_Init)
+    i.Random4BPPTestSprite                   0x00000dd4   Section        0  lcdtestmain.o(i.Random4BPPTestSprite)
+    i.RandomCircle                           0x00000e0c   Section        0  lcdtestmain.o(i.RandomCircle)
+    i.RandomRectangles                       0x00000e50   Section        0  lcdtestmain.o(i.RandomRectangles)
+    i.Touch_Init                             0x00000ed8   Section        0  ssd2119.o(i.Touch_Init)
+    i.__scatterload_copy                     0x00000f14   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000f22   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000f24   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.convertColor                           0x00000f32   Section        0  ssd2119.o(i.convertColor)
+    i.main                                   0x00000f44   Section        0  lcdtestmain.o(i.main)
+    i.printf                                 0x00000ff8   Section        0  ssd2119.o(i.printf)
+    i.printfTest                             0x00001078   Section        0  lcdtestmain.o(i.printfTest)
+    .constdata                               0x000010e0   Section      540  ssd2119.o(.constdata)
+    ASCII                                    0x000010e0   Data         480  ssd2119.o(.constdata)
+    .constdata                               0x000012fc   Section      305  lcdtestmain.o(.constdata)
+    .data                                    0x20000000   Section       10  ssd2119.o(.data)
+    .data                                    0x2000000c   Section       28  lcdtestmain.o(.data)
+    DATA                                     0x20000028   Section        4  random.o(DATA)
+    M                                        0x20000028   Data           4  random.o(DATA)
+    STACK                                    0x20000030   Section     1024  startup.o(STACK)
+    StackMem                                 0x20000030   Data           0  startup.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  lcdtestmain.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  startup.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    Reset_Handler                            0x0000026d   Thumb Code     0  startup.o(RESET)
+    NMI_Handler                              0x00000281   Thumb Code     2  startup.o(RESET)
+    HardFault_Handler                        0x00000283   Thumb Code     2  startup.o(RESET)
+    MemManage_Handler                        0x00000285   Thumb Code     2  startup.o(RESET)
+    BusFault_Handler                         0x00000287   Thumb Code     2  startup.o(RESET)
+    UsageFault_Handler                       0x00000289   Thumb Code     2  startup.o(RESET)
+    SVC_Handler                              0x0000028b   Thumb Code     2  startup.o(RESET)
+    DebugMon_Handler                         0x0000028d   Thumb Code     2  startup.o(RESET)
+    PendSV_Handler                           0x0000028f   Thumb Code     2  startup.o(RESET)
+    SysTick_Handler                          0x00000291   Thumb Code     2  startup.o(RESET)
+    ADC0Seq0_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    ADC0Seq1_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    ADC0Seq2_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    ADC0Seq3_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    ADC1Seq0_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    ADC1Seq1_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    ADC1Seq2_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    ADC1Seq3_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    CAN0_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    CAN1_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    CAN2_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    Comp0_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    Comp1_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    Comp2_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    Ethernet_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    ExtBus_Handler                           0x00000293   Thumb Code     0  startup.o(RESET)
+    FPU_Handler                              0x00000293   Thumb Code     0  startup.o(RESET)
+    Fan0_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    FlashCtl_Handler                         0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortB_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortC_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortD_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortE_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortF_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortG_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortH_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortJ_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortK_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortL_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortM_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortN_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortP1_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortP2_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortP3_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortP4_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortP5_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortP6_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortP7_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortP_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ1_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ2_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ3_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ4_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ5_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ6_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ7_Handler                       0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortQ_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortR_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    GPIOPortS_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    Hibernate_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    I2C0_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    I2C1_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    I2C2_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    I2C3_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    I2C4_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    I2C5_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    I2S0_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    LPC0_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    PECI0_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM0Fault_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM0Generator0_Handler                   0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM0Generator1_Handler                   0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM0Generator2_Handler                   0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM0Generator3_Handler                   0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM1Fault_Handler                        0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM1Generator0_Handler                   0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM1Generator1_Handler                   0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM1Generator2_Handler                   0x00000293   Thumb Code     0  startup.o(RESET)
+    PWM1Generator3_Handler                   0x00000293   Thumb Code     0  startup.o(RESET)
+    Quadrature0_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    Quadrature1_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    Quadrature2_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    SSI0_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    SSI1_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    SSI2_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    SSI3_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    SysCtl_Handler                           0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer0A_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer0B_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer1A_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer1B_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer2A_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer2B_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer3A_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer3B_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer4A_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer4B_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer5A_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    Timer5B_Handler                          0x00000293   Thumb Code     0  startup.o(RESET)
+    UART0_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    UART1_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    UART2_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    UART3_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    UART4_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    UART5_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    UART6_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    UART7_Handler                            0x00000293   Thumb Code     0  startup.o(RESET)
+    USB0_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    WDT_Handler                              0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer0A_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer0B_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer1A_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer1B_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer2A_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer2B_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer3A_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer3B_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer4A_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer4B_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer5A_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    WideTimer5B_Handler                      0x00000293   Thumb Code     0  startup.o(RESET)
+    uDMA_Error                               0x00000293   Thumb Code     0  startup.o(RESET)
+    uDMA_Handler                             0x00000293   Thumb Code     0  startup.o(RESET)
+    __main                                   0x00000295   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000295   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000299   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x0000029d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x0000029d   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x0000029d   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x0000029d   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x000002a5   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x000002a5   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Random_Init                              0x000002a9   Thumb Code     0  random.o(.text)
+    Random                                   0x000002b3   Thumb Code     2  random.o(.text)
+    __aeabi_f2d                              0x000002d1   Thumb Code    38  f2d.o(.text)
+    __I$use$fp                               0x000002f7   Thumb Code     0  iusefp.o(.text)
+    __scatterload                            0x000002f9   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x000002f9   Thumb Code     0  init.o(.text)
+    ADC_Init                                 0x0000031d   Thumb Code   108  ssd2119.o(i.ADC_Init)
+    GPIOPortA_Handler                        0x00000395   Thumb Code     8  ssd2119.o(i.GPIOPortA_Handler)
+    LCD_ColorFill                            0x000003a1   Thumb Code    20  ssd2119.o(i.LCD_ColorFill)
+    LCD_DrawFilledCircle                     0x000003b5   Thumb Code   204  ssd2119.o(i.LCD_DrawFilledCircle)
+    LCD_DrawFilledRect                       0x00000481   Thumb Code    80  ssd2119.o(i.LCD_DrawFilledRect)
+    LCD_DrawImage                            0x000004d1   Thumb Code   204  ssd2119.o(i.LCD_DrawImage)
+    LCD_DrawLine                             0x0000059d   Thumb Code   144  ssd2119.o(i.LCD_DrawLine)
+    LCD_DrawPixel                            0x0000062d   Thumb Code    48  ssd2119.o(i.LCD_DrawPixel)
+    LCD_DrawPixelRGB                         0x0000065d   Thumb Code    32  ssd2119.o(i.LCD_DrawPixelRGB)
+    LCD_DrawRect                             0x0000067d   Thumb Code    80  ssd2119.o(i.LCD_DrawRect)
+    LCD_GPIOInit                             0x000006cd   Thumb Code   128  ssd2119.o(i.LCD_GPIOInit)
+    LCD_Init                                 0x00000761   Thumb Code   414  ssd2119.o(i.LCD_Init)
+    LCD_PrintBinary                          0x00000905   Thumb Code   110  ssd2119.o(i.LCD_PrintBinary)
+    LCD_PrintChar                            0x00000981   Thumb Code   154  ssd2119.o(i.LCD_PrintChar)
+    LCD_PrintFloat                           0x00000a25   Thumb Code    82  ssd2119.o(i.LCD_PrintFloat)
+    LCD_PrintHex                             0x00000aa9   Thumb Code    82  ssd2119.o(i.LCD_PrintHex)
+    LCD_PrintInteger                         0x00000b05   Thumb Code    90  ssd2119.o(i.LCD_PrintInteger)
+    LCD_PrintString                          0x00000b5f   Thumb Code    26  ssd2119.o(i.LCD_PrintString)
+    LCD_SetCursor                            0x00000b79   Thumb Code     8  ssd2119.o(i.LCD_SetCursor)
+    LCD_SetTextColor                         0x00000b85   Thumb Code    12  ssd2119.o(i.LCD_SetTextColor)
+    LCD_WriteCommand                         0x00000b95   Thumb Code    54  ssd2119.o(i.LCD_WriteCommand)
+    LCD_WriteData                            0x00000bd5   Thumb Code    54  ssd2119.o(i.LCD_WriteData)
+    LineSpin                                 0x00000c15   Thumb Code   248  lcdtestmain.o(i.LineSpin)
+    MovingColorBars                          0x00000d11   Thumb Code    94  lcdtestmain.o(i.MovingColorBars)
+    PLL_Init                                 0x00000d75   Thumb Code    90  pll.o(i.PLL_Init)
+    Random4BPPTestSprite                     0x00000dd5   Thumb Code    52  lcdtestmain.o(i.Random4BPPTestSprite)
+    RandomCircle                             0x00000e0d   Thumb Code    68  lcdtestmain.o(i.RandomCircle)
+    RandomRectangles                         0x00000e51   Thumb Code   136  lcdtestmain.o(i.RandomRectangles)
+    Touch_Init                               0x00000ed9   Thumb Code    46  ssd2119.o(i.Touch_Init)
+    __scatterload_copy                       0x00000f15   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000f23   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000f25   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    convertColor                             0x00000f33   Thumb Code    16  ssd2119.o(i.convertColor)
+    main                                     0x00000f45   Thumb Code   176  lcdtestmain.o(i.main)
+    printf                                   0x00000ff9   Thumb Code   128  ssd2119.o(i.printf)
+    printfTest                               0x00001079   Thumb Code    42  lcdtestmain.o(i.printfTest)
+    Color4                                   0x000012c0   Data          32  ssd2119.o(.constdata)
+    testSprite4BPP                           0x000012fc   Data         128  lcdtestmain.o(.constdata)
+    Region$$Table$$Base                      0x00001430   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001450   Number         0  anon$$obj.o(Region$$Table)
+    cursorX                                  0x20000000   Data           2  ssd2119.o(.data)
+    cursorY                                  0x20000002   Data           2  ssd2119.o(.data)
+    textColor                                0x20000004   Data           2  ssd2119.o(.data)
+    Touch_XVal                               0x20000006   Data           2  ssd2119.o(.data)
+    Touch_YVal                               0x20000008   Data           2  ssd2119.o(.data)
+    x                                        0x2000000c   Data           4  lcdtestmain.o(.data)
+    y                                        0x20000010   Data           4  lcdtestmain.o(.data)
+    i                                        0x20000014   Data           4  lcdtestmain.o(.data)
+    yVal                                     0x20000018   Data           4  lcdtestmain.o(.data)
+    xVal                                     0x2000001c   Data           4  lcdtestmain.o(.data)
+    z1Val                                    0x20000020   Data           4  lcdtestmain.o(.data)
+    z2Val                                    0x20000024   Data           4  lcdtestmain.o(.data)
+    __initial_sp                             0x20000430   Data           0  startup.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000295
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x0000147c, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00001450, Max: 0x00040000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000294   Code   RO            3    RESET               startup.o
+    0x00000294   0x00000000   Code   RO          378  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000294   0x00000004   Code   RO          387    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000298   0x00000004   Code   RO          390    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0000029c   0x00000000   Code   RO          392    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0000029c   0x00000000   Code   RO          394    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0000029c   0x00000008   Code   RO          395    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x000002a4   0x00000000   Code   RO          397    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x000002a4   0x00000000   Code   RO          399    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x000002a4   0x00000004   Code   RO          388    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x000002a8   0x00000028   Code   RO          266    .text               random.o
+    0x000002d0   0x00000026   Code   RO          385    .text               mf_w.l(f2d.o)
+    0x000002f6   0x00000000   Code   RO          401    .text               mc_w.l(iusefp.o)
+    0x000002f6   0x00000002   PAD
+    0x000002f8   0x00000024   Code   RO          402    .text               mc_w.l(init.o)
+    0x0000031c   0x00000078   Code   RO           34    i.ADC_Init          ssd2119.o
+    0x00000394   0x0000000c   Code   RO           37    i.GPIOPortA_Handler  ssd2119.o
+    0x000003a0   0x00000014   Code   RO           38    i.LCD_ColorFill     ssd2119.o
+    0x000003b4   0x000000cc   Code   RO           41    i.LCD_DrawFilledCircle  ssd2119.o
+    0x00000480   0x00000050   Code   RO           42    i.LCD_DrawFilledRect  ssd2119.o
+    0x000004d0   0x000000cc   Code   RO           43    i.LCD_DrawImage     ssd2119.o
+    0x0000059c   0x00000090   Code   RO           44    i.LCD_DrawLine      ssd2119.o
+    0x0000062c   0x00000030   Code   RO           45    i.LCD_DrawPixel     ssd2119.o
+    0x0000065c   0x00000020   Code   RO           46    i.LCD_DrawPixelRGB  ssd2119.o
+    0x0000067c   0x00000050   Code   RO           47    i.LCD_DrawRect      ssd2119.o
+    0x000006cc   0x00000094   Code   RO           48    i.LCD_GPIOInit      ssd2119.o
+    0x00000760   0x000001a4   Code   RO           50    i.LCD_Init          ssd2119.o
+    0x00000904   0x0000007c   Code   RO           51    i.LCD_PrintBinary   ssd2119.o
+    0x00000980   0x000000a4   Code   RO           52    i.LCD_PrintChar     ssd2119.o
+    0x00000a24   0x00000084   Code   RO           53    i.LCD_PrintFloat    ssd2119.o
+    0x00000aa8   0x0000005c   Code   RO           54    i.LCD_PrintHex      ssd2119.o
+    0x00000b04   0x0000005a   Code   RO           55    i.LCD_PrintInteger  ssd2119.o
+    0x00000b5e   0x0000001a   Code   RO           56    i.LCD_PrintString   ssd2119.o
+    0x00000b78   0x0000000c   Code   RO           57    i.LCD_SetCursor     ssd2119.o
+    0x00000b84   0x00000010   Code   RO           58    i.LCD_SetTextColor  ssd2119.o
+    0x00000b94   0x00000040   Code   RO           59    i.LCD_WriteCommand  ssd2119.o
+    0x00000bd4   0x00000040   Code   RO           60    i.LCD_WriteData     ssd2119.o
+    0x00000c14   0x000000fc   Code   RO          271    i.LineSpin          lcdtestmain.o
+    0x00000d10   0x00000064   Code   RO          272    i.MovingColorBars   lcdtestmain.o
+    0x00000d74   0x00000060   Code   RO           12    i.PLL_Init          pll.o
+    0x00000dd4   0x00000038   Code   RO          274    i.Random4BPPTestSprite  lcdtestmain.o
+    0x00000e0c   0x00000044   Code   RO          275    i.RandomCircle      lcdtestmain.o
+    0x00000e50   0x00000088   Code   RO          277    i.RandomRectangles  lcdtestmain.o
+    0x00000ed8   0x0000003c   Code   RO           63    i.Touch_Init        ssd2119.o
+    0x00000f14   0x0000000e   Code   RO          406    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00000f22   0x00000002   Code   RO          407    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00000f24   0x0000000e   Code   RO          408    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00000f32   0x00000010   Code   RO           69    i.convertColor      ssd2119.o
+    0x00000f42   0x00000002   PAD
+    0x00000f44   0x000000b4   Code   RO          280    i.main              lcdtestmain.o
+    0x00000ff8   0x00000080   Code   RO           70    i.printf            ssd2119.o
+    0x00001078   0x00000068   Code   RO          281    i.printfTest        lcdtestmain.o
+    0x000010e0   0x0000021c   Data   RO           71    .constdata          ssd2119.o
+    0x000012fc   0x00000131   Data   RO          284    .constdata          lcdtestmain.o
+    0x0000142d   0x00000003   PAD
+    0x00001430   0x00000020   Data   RO          404    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000430, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000000a   Data   RW           73    .data               ssd2119.o
+    0x2000000a   0x00000002   PAD
+    0x2000000c   0x0000001c   Data   RW          285    .data               lcdtestmain.o
+    0x20000028   0x00000004   Data   RW          265    DATA                random.o
+    0x2000002c   0x00000004   PAD
+    0x20000030   0x00000400   Zero   RW            1    STACK               startup.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       896         80        305         28          0       4570   lcdtestmain.o
+        96          6          0          0          0       4683   pll.o
+        40         12          0          4          0        220   random.o
+      2500        168        540         10          0      18809   ssd2119.o
+       660        620          0          0       1024        780   startup.o
+
+    ----------------------------------------------------------------------
+      4194        886        880         44       1028      29062   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         2          0          3          2          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        38          0          0          0          0         68   f2d.o
+
+    ----------------------------------------------------------------------
+       126         16          0          0          0        136   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        86         16          0          0          0         68   mc_w.l
+        38          0          0          0          0         68   mf_w.l
+
+    ----------------------------------------------------------------------
+       126         16          0          0          0        136   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      4320        902        880         44       1028      26498   Grand Totals
+      4320        902        880         44       1028      26498   ELF Image Totals
+      4320        902        880         44          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 5200 (   5.08kB)
+    Total RW  Size (RW Data + ZI Data)              1072 (   1.05kB)
+    Total ROM Size (Code + RO Data + RW Data)       5244 (   5.12kB)
+
+==============================================================================
+

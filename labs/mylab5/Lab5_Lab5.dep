@@ -1,0 +1,66 @@
+Dependencies for Project 'Lab5', Target 'Lab5': (DO NOT MODIFY !)
+F (.\startup.s)(0x5A9462DC)(--cpu Cortex-M4 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\Timer0A.c)(0x5A9462DC)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\timer0a.o --omf_browse .\timer0a.crf --depend .\timer0a.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (..//inc//tm4c123gh6pm.h)(0x5A84ED30)
+F (.\PLL.c)(0x5A9462DC)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (PLL.h)(0x5A9462DC)
+I (../inc/tm4c123gh6pm.h)(0x5A84ED30)
+F (.\Main.c)(0x5A95E7B8)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (..//inc//tm4c123gh6pm.h)(0x5A84ED30)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C87C24)
+I (PLL.h)(0x5A9462DC)
+I (Timer0A.h)(0x5A9462DC)
+I (Timer1A.h)(0x5A9462DC)
+I (DAC.h)(0x5A949970)
+I (Switch.h)(0x5A94995F)
+I (Music.h)(0x5A94AC6E)
+I (SysTick.h)(0x5A949944)
+I (Buttons.h)(0x5A94ACDE)
+I (Timer2A.h)(0x5A95E7B8)
+F (.\DAC.c)(0x5A95F666)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\dac.o --omf_browse .\dac.crf --depend .\dac.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (../inc/tm4c123gh6pm.h)(0x5A84ED30)
+I (Timer2A.h)(0x5A95E7B8)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C87C24)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C87C24)
+I (Music.h)(0x5A94AC6E)
+F (.\Music.c)(0x5A95F609)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\music.o --omf_browse .\music.crf --depend .\music.d)
+I (DAC.h)(0x5A949970)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (Music.h)(0x5A94AC6E)
+I (Buttons.h)(0x5A94ACDE)
+I (Timer2A.h)(0x5A95E7B8)
+I (C:\Keil\ARM\ARMCC\include\math.h)(0x51C87C24)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C87C24)
+F (.\SysTick.c)(0x5A95DC06)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\systick.o --omf_browse .\systick.crf --depend .\systick.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (../inc/tm4c123gh6pm.h)(0x5A84ED30)
+I (Music.h)(0x5A94AC6E)
+I (DAC.h)(0x5A949970)
+F (.\DAC.h)(0x5A949970)()
+F (.\Music.h)(0x5A94AC6E)()
+F (.\PLL.h)(0x5A9462DC)()
+F (.\Switch.h)(0x5A94995F)()
+F (.\SysTick.h)(0x5A949944)()
+F (.\Timer0A.h)(0x5A9462DC)()
+F (.\Timer1A.c)(0x5A95D70B)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\timer1a.o --omf_browse .\timer1a.crf --depend .\timer1a.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (Buttons.h)(0x5A94ACDE)
+I (../inc/tm4c123gh6pm.h)(0x5A84ED30)
+F (.\Timer1A.h)(0x5A9462DC)()
+F (.\Buttons.h)(0x5A94ACDE)()
+F (.\Buttons.c)(0x5A95DA19)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\buttons.o --omf_browse .\buttons.crf --depend .\buttons.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (../inc/tm4c123gh6pm.h)(0x5A84ED30)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C87C24)
+I (Buttons.h)(0x5A94ACDE)
+I (Timer1A.h)(0x5A9462DC)
+I (Music.h)(0x5A94AC6E)
+F (.\Timer2A.c)(0x5A95F1F2)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\timer2a.o --omf_browse .\timer2a.crf --depend .\timer2a.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (Buttons.h)(0x5A94ACDE)
+I (../inc/tm4c123gh6pm.h)(0x5A84ED30)
+F (.\Timer2A.h)(0x5A95E7B8)()

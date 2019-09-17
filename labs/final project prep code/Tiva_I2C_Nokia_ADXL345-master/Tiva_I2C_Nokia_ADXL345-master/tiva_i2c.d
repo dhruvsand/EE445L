@@ -1,0 +1,13 @@
+.\tiva_i2c.o: Tiva_i2c.c
+.\tiva_i2c.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\tiva_i2c.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\tiva_i2c.o: Tiva_i2c.h
+.\tiva_i2c.o: inc/tm4c123gh6pm.h
+.\tiva_i2c.o: inc/hw_i2c.h
+.\tiva_i2c.o: inc/hw_memmap.h
+.\tiva_i2c.o: inc/hw_types.h
+.\tiva_i2c.o: inc/hw_gpio.h
+.\tiva_i2c.o: driverlib/i2c.h
+.\tiva_i2c.o: driverlib/sysctl.h
+.\tiva_i2c.o: driverlib/gpio.h
+.\tiva_i2c.o: driverlib/pin_map.h

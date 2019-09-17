@@ -1,0 +1,51 @@
+Dependencies for Project 'EdgeInterrupt', Target 'EdgeInterrupt': (DO NOT MODIFY !)
+F (.\startup.s)(0x5AE73075)(--cpu Cortex-M4 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\EdgeInterrupt.c)(0x5AE7B998)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\edgeinterrupt.o --omf_browse .\edgeinterrupt.crf --depend .\edgeinterrupt.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (..\../inc/tm4c123gh6pm.h)(0x5A645F0C)
+I (coeff.h)(0x5AE73073)
+I (PLL.h)(0x5AE73074)
+I (ECG.h)(0x5AE73073)
+I (SSD2119.h)(0x5AE73075)
+I (Buttons.h)(0x5AE7B7E1)
+I (ACCEL.h)(0x5AE73072)
+I (ADCT0ATrigger.h)(0x5AC51C2B)
+F (.\ISR.c)(0x5AE73074)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\isr.o --omf_browse .\isr.crf --depend .\isr.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (..\../inc/tm4c123gh6pm.h)(0x5A645F0C)
+I (coeff.h)(0x5AE73073)
+I (ISR.h)(0x5AE73074)
+F (.\coeff.c)(0x5AE73073)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\coeff.o --omf_browse .\coeff.crf --depend .\coeff.d)
+I (coeff.h)(0x5AE73073)
+F (.\PLL.c)(0x5AE73074)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (PLL.h)(0x5AE73074)
+I (..\../inc/tm4c123gh6pm.h)(0x5A645F0C)
+F (.\ECG.c)(0x5AED1DDA)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\ecg.o --omf_browse .\ecg.crf --depend .\ecg.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (..\../inc/tm4c123gh6pm.h)(0x5A645F0C)
+I (ECG.h)(0x5AE73073)
+I (fixed.h)(0x5AE73074)
+I (ST7735.h)(0x5AE73075)
+I (SSD2119.h)(0x5AE73075)
+I (ADCT0ATrigger.h)(0x5AC51C2B)
+I (Buttons.h)(0x5AE7B7E1)
+F (.\application_commands.c)(0x5AE73073)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\application_commands.o --omf_browse .\application_commands.crf --depend .\application_commands.d)
+F (.\ACCEL.c)(0x5AE73072)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\accel.o --omf_browse .\accel.crf --depend .\accel.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (..\../inc/tm4c123gh6pm.h)(0x5A645F0C)
+I (ACCEL.h)(0x5AE73072)
+F (.\Buttons.c)(0x5AE7BE3C)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\buttons.o --omf_browse .\buttons.crf --depend .\buttons.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (..\../inc/tm4c123gh6pm.h)(0x5A645F0C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C88A34)
+I (SSD2119.h)(0x5AE73075)
+F (.\SSD2119.c)(0x5AE73074)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\ssd2119.o --omf_browse .\ssd2119.crf --depend .\ssd2119.d)
+I (..\../inc/tm4c123gh6pm.h)(0x5A645F0C)
+I (SSD2119.h)(0x5AE73075)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+F (.\ADCT0ATrigger.c)(0x5AE7B18B)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\adct0atrigger.o --omf_browse .\adct0atrigger.crf --depend .\adct0atrigger.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (..\../inc/tm4c123gh6pm.h)(0x5A645F0C)
+F (.\ADCT0ATrigger.h)(0x5AC51C2B)()
+F (.\ECG.h)(0x5AE73073)()

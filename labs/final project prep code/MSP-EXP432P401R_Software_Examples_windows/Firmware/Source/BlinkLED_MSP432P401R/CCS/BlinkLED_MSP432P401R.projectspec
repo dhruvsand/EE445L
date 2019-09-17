@@ -1,0 +1,13 @@
+<projectSpec>
+  <project
+    compilerBuildOptions="-I${PROJECT_LOC} -I${PROJECT_LOC}/driverlib/MSP432P4xx"
+    device="Cortex M.MSP432P401R"
+    name="BlinkLED_MSP432P401R"
+    enableHexTool="true"
+    linkerCommandFile="msp432p401r.cmd" >
+    <file action="copy" path="../driverlib" />
+    <file action="copy" path="../main.c" openOnCreation="true" />
+    <file action="copy" path="startup_msp432p401r_ccs.c" overwriteExisting="true" />
+    <file action="copy" path="system_msp432p401r.c" overwriteExisting="true" />
+  </project>
+</projectSpec>

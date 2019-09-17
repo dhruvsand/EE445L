@@ -1,0 +1,18 @@
+<projectSpec>
+  <project
+    compilerBuildOptions="-I${PROJECT_ROOT} -I${PROJECT_ROOT}/driverlib/MSP432P4xx -I${PROJECT_ROOT}/GrLib/grlib -I${PROJECT_ROOT}/LcdDriver"
+    device="Cortex M.MSP432P401R"
+    name="BOOSTXL-K350QVG-S1_GrlibExample_MSP432P401R"
+    enableHexTool="true"
+    linkerCommandFile="msp432p401r.cmd" >
+    <file action="copy" path="../main.c" openOnCreation="true" />
+    <file action="copy" path="../touch_P401R.c" />
+	<file action="copy" path="../touch_P401R.h" />
+    <file action="copy" path="../driverlib" />
+    <file action="copy" path="../LcdDriver" />
+    <file action="copy" path="../images" />
+    <file action="copy" path="../GrLib" />
+    <file action="copy" path="startup_msp432p401r_ccs.c" overwriteExisting="true" />
+    <file action="copy" path="system_msp432p401r.c" overwriteExisting="true" />
+  </project>
+</projectSpec>

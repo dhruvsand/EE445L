@@ -1,0 +1,19 @@
+<projectSpec>
+  <project
+    compilerBuildOptions="-I${PROJECT_ROOT} -I${PROJECT_ROOT}/driverlib/MSP432P4xx"
+    device="Cortex M.MSP432P401R"
+    name="BOOSTXL-BATPAKMKII_FuelGauge_MSP432P401R"
+    enableHexTool="true"
+    linkerCommandFile="msp432p401r.cmd" >
+    <file action="copy" path="../driverlib" />
+    <file action="copy" path="../main.c" openOnCreation="true" />
+    <file action="copy" path="../HAL_BQ27441.c" />
+    <file action="copy" path="../HAL_BQ27441.h" />
+    <file action="copy" path="../HAL_I2C.c" />
+    <file action="copy" path="../HAL_I2C.h" />
+    <file action="copy" path="../HAL_UART.c" />
+    <file action="copy" path="../HAL_UART.h" />
+    <file action="copy" path="startup_msp432p401r_ccs.c" overwriteExisting="true" />
+    <file action="copy" path="system_msp432p401r.c" overwriteExisting="true" />
+  </project>
+</projectSpec>

@@ -1,0 +1,10 @@
+Dependencies for Project 'PeriodMeasure', Target 'PeriodMeasure': (DO NOT MODIFY !)
+F (.\startup.s)(0x5A84FB4C)(--cpu Cortex-M4 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\PeriodMeasure.c)(0x5AD66BBF)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\periodmeasure.o --omf_browse .\periodmeasure.crf --depend .\periodmeasure.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+I (PLL.h)(0x5A84FB4C)
+F (.\PLL.c)(0x5A84FB4C)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (PLL.h)(0x5A84FB4C)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)

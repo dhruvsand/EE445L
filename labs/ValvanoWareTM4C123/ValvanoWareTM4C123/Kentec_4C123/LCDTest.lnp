@@ -1,0 +1,10 @@
+--cpu Cortex-M4.fp
+".\startup.o"
+".\pll.o"
+".\ssd2119.o"
+".\random.o"
+".\lcdtestmain.o"
+--library_type=microlib --strict --scatter ".\LCDTest.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\LCDTest.map" -o .\LCDTest.axf

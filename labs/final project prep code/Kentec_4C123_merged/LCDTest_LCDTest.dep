@@ -1,0 +1,47 @@
+Dependencies for Project 'LCDTest', Target 'LCDTest': (DO NOT MODIFY !)
+F (.\startup.s)(0x5A84FB41)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I../-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\PLL.c)(0x5A84FB41)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (PLL.h)(0x5ABF8619)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+F (.\SSD2119.c)(0x5ABFAED6)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\ssd2119.o --omf_browse .\ssd2119.crf --depend .\ssd2119.d)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+I (SSD2119.h)(0x5A84FB41)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+F (.\random.s)(0x5A84FB41)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I../-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\random.lst --xref -o .\random.o --depend .\random.d)
+F (.\LCDTestMain.c)(0x5AC2C0DF)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\lcdtestmain.o --omf_browse .\lcdtestmain.crf --depend .\lcdtestmain.d)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+I (SSD2119.h)(0x5A84FB41)
+I (PLL.h)(0x5ABF8619)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (random.h)(0x5A84FB41)
+I (LCDTests.h)(0x5AC2C4D7)
+F (.\Nokia5110.c)(0x5AC2BE41)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\nokia5110.o --omf_browse .\nokia5110.crf --depend .\nokia5110.d)
+I (Nokia5110.h)(0x5AC2BE41)
+F (.\Tiva_Accelerometer.c)(0x5AC2C5BE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\tiva_accelerometer.o --omf_browse .\tiva_accelerometer.crf --depend .\tiva_accelerometer.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C88A34)
+I (driverlib/sysctl.h)(0x5A84FB34)
+I (Nokia5110.h)(0x5AC2BE41)
+I (ADXL345_Accelerometer.h)(0x5AC2C5BE)
+I (inc/tm4c123gh6pm.h)(0x5A84FB40)
+F (.\Tiva_i2c.c)(0x5AC2C2DD)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\tiva_i2c.o --omf_browse .\tiva_i2c.crf --depend .\tiva_i2c.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C88A34)
+I (Tiva_i2c.h)(0x5AC2BE41)
+I (inc/tm4c123gh6pm.h)(0x5A84FB40)
+I (inc/hw_i2c.h)(0x5A84FB3F)
+I (inc/hw_memmap.h)(0x5A84FB3F)
+I (inc/hw_types.h)(0x5A84FB3F)
+I (inc/hw_gpio.h)(0x5A84FB3F)
+I (driverlib/i2c.h)(0x5A84FB34)
+I (driverlib/sysctl.h)(0x5A84FB34)
+I (driverlib/gpio.h)(0x5A84FB34)
+I (driverlib/pin_map.h)(0x5A84FB34)
+F (.\ADXL345_Accelerometer.c)(0x5AC2C5BE)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\adxl345_accelerometer.o --omf_browse .\adxl345_accelerometer.crf --depend .\adxl345_accelerometer.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (Tiva_i2c.h)(0x5AC2BE41)
+I (ADXL345_Accelerometer.h)(0x5AC2C5BE)
+F (.\ADXL345_Accelerometer.h)(0x5AC2C5BE)()
+F (.\Nokia5110.h)(0x5AC2BE41)()
+F (.\Tiva_i2c.h)(0x5AC2BE41)()

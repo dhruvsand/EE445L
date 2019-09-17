@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Sean\ValvanoWare\LAB11_UPDATED\Kentec_4C123_merged\LCDTest.uvproj
+Project File Date:  04/18/2018
+
+<h2>Output:</h2>
+Rebuild target 'LCDTest'
+assembling startup.s...
+compiling PLL.c...
+compiling SSD2119.c...
+assembling random.s...
+compiling LCDTestMain.c...
+LCDTestMain.c(49): warning:  #128-D: loop is not reachable
+          for(i=0; i<1000; i=i+1){
+LCDTestMain.c: 1 warning, 0 errors
+compiling Nokia5110.c...
+compiling Tiva_Accelerometer.c...
+ADXL345_Accelerometer.h(39): warning:  #1295-D: Deprecated declaration getAcceleration_rawX - give arg types
+  uint16_t getAcceleration_rawX();
+ADXL345_Accelerometer.h(40): warning:  #1295-D: Deprecated declaration getAcceleration_rawY - give arg types
+  uint16_t getAcceleration_rawY();
+ADXL345_Accelerometer.h(41): warning:  #1295-D: Deprecated declaration getAcceleration_rawZ - give arg types
+  uint16_t getAcceleration_rawZ();
+ADXL345_Accelerometer.h(42): warning:  #1295-D: Deprecated declaration getAcceleration_X - give arg types
+  signed int getAcceleration_X();
+ADXL345_Accelerometer.h(43): warning:  #1295-D: Deprecated declaration getAcceleration_Y - give arg types
+  signed int getAcceleration_Y();
+ADXL345_Accelerometer.h(44): warning:  #1295-D: Deprecated declaration getAcceleration_Z - give arg types
+  signed int getAcceleration_Z();
+ADXL345_Accelerometer.h(45): warning:  #1295-D: Deprecated declaration getPitch - give arg types
+  signed int getPitch();
+ADXL345_Accelerometer.h(46): warning:  #1295-D: Deprecated declaration getRoll - give arg types
+  signed int getRoll();
+Tiva_Accelerometer.c(150): warning:  #111-D: statement is unreachable
+        return 0;
+Tiva_Accelerometer.c: 9 warnings, 0 errors
+compiling Tiva_i2c.c...
+compiling ADXL345_Accelerometer.c...
+ADXL345_Accelerometer.h(39): warning:  #1295-D: Deprecated declaration getAcceleration_rawX - give arg types
+  uint16_t getAcceleration_rawX();
+ADXL345_Accelerometer.h(40): warning:  #1295-D: Deprecated declaration getAcceleration_rawY - give arg types
+  uint16_t getAcceleration_rawY();
+ADXL345_Accelerometer.h(41): warning:  #1295-D: Deprecated declaration getAcceleration_rawZ - give arg types
+  uint16_t getAcceleration_rawZ();
+ADXL345_Accelerometer.h(42): warning:  #1295-D: Deprecated declaration getAcceleration_X - give arg types
+  signed int getAcceleration_X();
+ADXL345_Accelerometer.h(43): warning:  #1295-D: Deprecated declaration getAcceleration_Y - give arg types
+  signed int getAcceleration_Y();
+ADXL345_Accelerometer.h(44): warning:  #1295-D: Deprecated declaration getAcceleration_Z - give arg types
+  signed int getAcceleration_Z();
+ADXL345_Accelerometer.h(45): warning:  #1295-D: Deprecated declaration getPitch - give arg types
+  signed int getPitch();
+ADXL345_Accelerometer.h(46): warning:  #1295-D: Deprecated declaration getRoll - give arg types
+  signed int getRoll();
+ADXL345_Accelerometer.c: 8 warnings, 0 errors
+linking...
+.\LCDTest.axf: Error: L6218E: Undefined symbol SysCtlClockSet (referred from tiva_accelerometer.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol GPIOPinConfigure (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol GPIOPinTypeI2C (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol GPIOPinTypeI2CSCL (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol I2CMasterBusy (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol I2CMasterControl (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol I2CMasterDataGet (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol I2CMasterDataPut (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol I2CMasterInitExpClk (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol I2CMasterSlaveAddrSet (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol SysCtlClockGet (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol SysCtlPeripheralEnable (referred from tiva_i2c.o).
+.\LCDTest.axf: Error: L6218E: Undefined symbol SysCtlPeripheralReset (referred from tiva_i2c.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 13 error messages.
+".\LCDTest.axf" - 13 Error(s), 18 Warning(s).
+Target not created

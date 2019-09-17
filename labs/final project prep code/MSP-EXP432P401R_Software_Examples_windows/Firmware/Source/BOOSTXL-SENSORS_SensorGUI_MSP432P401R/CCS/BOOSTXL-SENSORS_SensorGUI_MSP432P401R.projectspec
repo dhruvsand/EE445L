@@ -1,0 +1,14 @@
+<projectSpec>
+  <project
+    compilerBuildOptions="-I${PROJECT_ROOT}/src -I${PROJECT_ROOT}/driverlib/MSP432P4xx -O4"
+    device="Cortex M.MSP432P401R"
+    name="BOOSTXL-SENSORS_SensorGUI_MSP432P401R"
+    enableHexTool="true"
+    linkerCommandFile="msp432p401r.cmd" >
+    <file action="copy" path="../driverlib" />
+    <file action="copy" path="../src" />
+    <file action="copy" path="../readme.txt" />
+    <file action="copy" path="startup_msp432p401r_ccs.c" overwriteExisting="true" />
+    <file action="copy" path="system_msp432p401r.c" overwriteExisting="true" />
+  </project>
+</projectSpec>

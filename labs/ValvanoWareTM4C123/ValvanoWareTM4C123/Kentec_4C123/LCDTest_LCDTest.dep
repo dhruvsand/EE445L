@@ -1,0 +1,18 @@
+Dependencies for Project 'LCDTest', Target 'LCDTest': (DO NOT MODIFY !)
+F (.\startup.s)(0x5A84FB41)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I../-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\PLL.c)(0x5A84FB41)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (PLL.h)(0x5ABF8619)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+F (.\SSD2119.c)(0x5ABF86B0)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\ssd2119.o --omf_browse .\ssd2119.crf --depend .\ssd2119.d)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+I (SSD2119.h)(0x5A84FB41)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+F (.\random.s)(0x5A84FB41)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I../-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123--list .\random.lst --xref -o .\random.o --depend .\random.d)
+F (.\LCDTestMain.c)(0x5ABF85F4)(-c --cpu Cortex-M4.fp -D__MICROLIB -g -O3 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..  --fpu=fpv4-sp --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C1233H6PM-o .\lcdtestmain.o --omf_browse .\lcdtestmain.crf --depend .\lcdtestmain.d)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+I (SSD2119.h)(0x5A84FB41)
+I (PLL.h)(0x5ABF8619)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (random.h)(0x5A84FB41)
+I (LCDTests.h)(0x5A84FB41)

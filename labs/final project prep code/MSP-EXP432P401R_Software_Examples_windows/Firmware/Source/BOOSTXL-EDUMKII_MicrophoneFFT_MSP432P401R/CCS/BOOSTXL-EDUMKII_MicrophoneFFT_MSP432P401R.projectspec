@@ -1,0 +1,20 @@
+<projectSpec>
+  <project
+    compilerBuildOptions='-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 -I${PROJECT_ROOT} -I${PROJECT_ROOT}/driverlib/MSP432P4xx -I${PROJECT_ROOT}/GrLib/grlib -I${PROJECT_ROOT}/GrLib/fonts -I${PROJECT_ROOT}/LcdDriver -I${PROJECT_ROOT}/CMSIS/Include --gcc --define=__MSP432P401R__ --define=ARM_MATH_CM4 --define=__FPU_PRESENT=1 --define=_LINKAGE --define=_CODE_ACCESS="" --define=_DATA_ACCESS="" --define=TARGET_IS_MSP432P4XX --define=ccs --gen_func_subsections=on --ual'
+    device="Cortex M.MSP432P401R"
+    linkerBuildOptions="--heap_size=1024 --stack_size=512"
+    name="BOOSTXL-EDUMKII_MicrophoneFFT_MSP432P401R"
+    enableHexTool="true"
+    linkerCommandFile="msp432p401r.cmd"
+    ignoreDefaultDeviceSettings="true" >
+    <file action="copy" path="../CMSIS/DSP_Lib" targetDirectory="CMSIS" excludeFromBuild="true"/>
+    <file action="copy" path="../CMSIS/Include" targetDirectory="CMSIS" />
+    <file action="copy" path="../driverlib" />
+    <file action="copy" path="../GrLib" />
+    <file action="copy" path="../LcdDriver" />
+    <file action="copy" path="dsplib-msp432.lib" />
+    <file action="copy" path="../main.c" openOnCreation="true" />
+    <file action="copy" path="system_msp432p401r.c" overwriteExisting="true" />
+    <file action="copy" path="startup_msp432p401r_ccs.c" overwriteExisting="true" />
+  </project>
+</projectSpec>

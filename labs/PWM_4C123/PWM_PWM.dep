@@ -1,0 +1,46 @@
+Dependencies for Project 'PWM', Target 'PWM': (DO NOT MODIFY !)
+F (.\startup.s)(0x5A84FB51)(--cpu Cortex-M4 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\PLL.c)(0x5A84FB50)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (PLL.h)(0x5A84FB51)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+F (.\PWM.c)(0x5A84FB51)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pwm.o --omf_browse .\pwm.crf --depend .\pwm.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+F (.\PWMtest.c)(0x5AD67B14)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pwmtest.o --omf_browse .\pwmtest.crf --depend .\pwmtest.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (PLL.h)(0x5A84FB51)
+I (PWM.h)(0x5A84FB51)
+I (Tach.h)(0x5AD554EB)
+I (SysTick.h)(0x5A84FB5A)
+I (SSD2119.h)(0x5A84FB41)
+I (motor.h)(0x5ACEAA0C)
+I (Timer0A.h)(0x5AD54326)
+I (switch.h)(0x5ACEA863)
+F (.\PWM.h)(0x5A84FB51)()
+F (.\Tach.c)(0x5AD67B9F)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\tach.o --omf_browse .\tach.crf --depend .\tach.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (Timer0A.h)(0x5AD54326)
+I (PWM.h)(0x5A84FB51)
+I (..//inc//tm4c123gh6pm.h)(0x5A84FB40)
+F (.\switch.c)(0x5ACEA863)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\switch.o --omf_browse .\switch.crf --depend .\switch.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+I (SysTick.h)(0x5A84FB5A)
+F (.\SSD2119.h)(0x5A84FB41)()
+F (.\SysTick.h)(0x5A84FB5A)()
+F (.\SSD2119.c)(0x5ABF86B0)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\ssd2119.o --omf_browse .\ssd2119.crf --depend .\ssd2119.d)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+I (SSD2119.h)(0x5A84FB41)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+F (.\SysTick.c)(0x5A84FB59)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\systick.o --omf_browse .\systick.crf --depend .\systick.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (../inc/tm4c123gh6pm.h)(0x5A84FB40)
+F (.\motor.c)(0x5ACEAEEA)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\motor.o --omf_browse .\motor.crf --depend .\motor.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (PWM.h)(0x5A84FB51)
+F (.\Timer0A.c)(0x5AD554FA)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --C99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\timer0a.o --omf_browse .\timer0a.crf --depend .\timer0a.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C88A34)
+I (..//inc//tm4c123gh6pm.h)(0x5A84FB40)
+I (Tach.h)(0x5AD554EB)
+F (.\Timer0A.h)(0x5AD54326)()

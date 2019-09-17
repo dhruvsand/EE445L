@@ -1,0 +1,13 @@
+.\main.o: Main.c
+.\main.o: ..//inc//tm4c123gh6pm.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\main.o: PLL.h
+.\main.o: Timer0A.h
+.\main.o: Timer1A.h
+.\main.o: DAC.h
+.\main.o: Switch.h
+.\main.o: Music.h
+.\main.o: SysTick.h
+.\main.o: Buttons.h
+.\main.o: Timer2A.h

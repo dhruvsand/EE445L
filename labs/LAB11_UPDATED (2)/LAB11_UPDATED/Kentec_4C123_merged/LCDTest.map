@@ -1,0 +1,329 @@
+ARM Linker, 5.03 [Build 76] [MDK-ARM Lite]
+
+==============================================================================
+
+Section Cross References
+
+    startup.o(RESET) refers to startup.o(STACK) for StackMem
+    startup.o(RESET) refers to ssd2119.o(i.GPIOPortA_Handler) for GPIOPortA_Handler
+    startup.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    ssd2119.o(i.LCD_ColorFill) refers to ssd2119.o(i.LCD_DrawFilledRect) for LCD_DrawFilledRect
+    ssd2119.o(i.LCD_DrawBMP) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_DrawBMP) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_DrawBMP) refers to ssd2119.o(.constdata) for .constdata
+    ssd2119.o(i.LCD_DrawCircle) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_DrawFilledCircle) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_DrawFilledRect) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_DrawFilledRect) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_DrawImage) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_DrawImage) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_DrawLine) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_DrawPixel) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_DrawPixel) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_DrawPixelRGB) refers to ssd2119.o(i.convertColor) for convertColor
+    ssd2119.o(i.LCD_DrawPixelRGB) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_DrawRect) refers to ssd2119.o(i.LCD_DrawLine) for LCD_DrawLine
+    ssd2119.o(i.LCD_Goto) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_GPIOInit) for LCD_GPIOInit
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_WriteCommand) for LCD_WriteCommand
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    ssd2119.o(i.LCD_Init) refers to ssd2119.o(i.LCD_SetTextColor) for LCD_SetTextColor
+    ssd2119.o(i.LCD_PrintBinary) refers to ssd2119.o(i.LCD_PrintString) for LCD_PrintString
+    ssd2119.o(i.LCD_PrintBinary) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_PrintChar) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    ssd2119.o(i.LCD_PrintChar) refers to ssd2119.o(i.LCD_DrawPixel) for LCD_DrawPixel
+    ssd2119.o(i.LCD_PrintChar) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.LCD_PrintChar) refers to ssd2119.o(.constdata) for .constdata
+    ssd2119.o(i.LCD_PrintFloat) refers to f2d.o(.text) for __aeabi_f2d
+    ssd2119.o(i.LCD_PrintFloat) refers to ssd2119.o(i.printf) for printf
+    ssd2119.o(i.LCD_PrintFloat) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_PrintHex) refers to ssd2119.o(i.LCD_PrintString) for LCD_PrintString
+    ssd2119.o(i.LCD_PrintHex) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_PrintInteger) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_PrintString) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.LCD_SetCursor) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.LCD_SetTextColor) refers to ssd2119.o(i.convertColor) for convertColor
+    ssd2119.o(i.LCD_SetTextColor) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.Touch_BeginWaitForTouch) refers to startup.o(.text) for DisableInterrupts
+    ssd2119.o(i.Touch_GetCoords) refers to memcpya.o(.text) for __aeabi_memcpy4
+    ssd2119.o(i.Touch_GetCoords) refers to ssd2119.o(.constdata) for .constdata
+    ssd2119.o(i.Touch_GetCoords) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.Touch_Init) refers to ssd2119.o(i.ADC_Init) for ADC_Init
+    ssd2119.o(i.Touch_ReadX) refers to ssd2119.o(i.ADC_SetChannel) for ADC_SetChannel
+    ssd2119.o(i.Touch_ReadX) refers to ssd2119.o(i.ADC_Read) for ADC_Read
+    ssd2119.o(i.Touch_ReadX) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.Touch_ReadY) refers to ssd2119.o(i.ADC_SetChannel) for ADC_SetChannel
+    ssd2119.o(i.Touch_ReadY) refers to ssd2119.o(i.ADC_Read) for ADC_Read
+    ssd2119.o(i.Touch_ReadY) refers to ssd2119.o(.data) for .data
+    ssd2119.o(i.Touch_ReadZ1) refers to ssd2119.o(i.ADC_SetChannel) for ADC_SetChannel
+    ssd2119.o(i.Touch_ReadZ1) refers to ssd2119.o(i.ADC_Read) for ADC_Read
+    ssd2119.o(i.Touch_ReadZ2) refers to ssd2119.o(i.ADC_SetChannel) for ADC_SetChannel
+    ssd2119.o(i.Touch_ReadZ2) refers to ssd2119.o(i.ADC_Read) for ADC_Read
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintInteger) for LCD_PrintInteger
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintString) for LCD_PrintString
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintFloat) for LCD_PrintFloat
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintHex) for LCD_PrintHex
+    ssd2119.o(i.printf) refers to ssd2119.o(i.LCD_PrintBinary) for LCD_PrintBinary
+    random.o(.text) refers to random.o(DATA) for M
+    lcdtestmain.o(i.BWWaitFill) refers to ssd2119.o(i.convertColor) for convertColor
+    lcdtestmain.o(i.BWWaitFill) refers to ssd2119.o(i.LCD_ColorFill) for LCD_ColorFill
+    lcdtestmain.o(i.BWWaitFill) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.BlastChars) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcdtestmain.o(i.BlastChars) refers to random.o(.text) for Random
+    lcdtestmain.o(i.BlastChars) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    lcdtestmain.o(i.LineSpin) refers to random.o(.text) for Random
+    lcdtestmain.o(i.LineSpin) refers to ssd2119.o(i.convertColor) for convertColor
+    lcdtestmain.o(i.LineSpin) refers to ssd2119.o(i.LCD_DrawLine) for LCD_DrawLine
+    lcdtestmain.o(i.LineSpin) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.MovingColorBars) refers to ssd2119.o(i.LCD_DrawPixelRGB) for LCD_DrawPixelRGB
+    lcdtestmain.o(i.MovingColorBars) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.PrintAsciiChars) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcdtestmain.o(i.PrintAsciiChars) refers to ssd2119.o(i.LCD_PrintChar) for LCD_PrintChar
+    lcdtestmain.o(i.Random4BPPTestSprite) refers to random.o(.text) for Random
+    lcdtestmain.o(i.Random4BPPTestSprite) refers to ssd2119.o(i.LCD_DrawImage) for LCD_DrawImage
+    lcdtestmain.o(i.Random4BPPTestSprite) refers to lcdtestmain.o(.constdata) for .constdata
+    lcdtestmain.o(i.RandomCircle) refers to random.o(.text) for Random
+    lcdtestmain.o(i.RandomCircle) refers to ssd2119.o(i.LCD_DrawFilledCircle) for LCD_DrawFilledCircle
+    lcdtestmain.o(i.RandomColorFill) refers to random.o(.text) for Random
+    lcdtestmain.o(i.RandomColorFill) refers to ssd2119.o(i.convertColor) for convertColor
+    lcdtestmain.o(i.RandomColorFill) refers to ssd2119.o(i.LCD_WriteData) for LCD_WriteData
+    lcdtestmain.o(i.RandomRectangles) refers to random.o(.text) for Random
+    lcdtestmain.o(i.RandomRectangles) refers to ssd2119.o(i.convertColor) for convertColor
+    lcdtestmain.o(i.RandomRectangles) refers to ssd2119.o(i.LCD_DrawRect) for LCD_DrawRect
+    lcdtestmain.o(i.TestStringOutput) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcdtestmain.o(i.TestStringOutput) refers to ssd2119.o(i.LCD_PrintString) for LCD_PrintString
+    lcdtestmain.o(i.TestStringOutput) refers to lcdtestmain.o(.constdata) for .constdata
+    lcdtestmain.o(i.charTest) refers to ssd2119.o(i.LCD_Goto) for LCD_Goto
+    lcdtestmain.o(i.charTest) refers to ssd2119.o(i.printf) for printf
+    lcdtestmain.o(i.main2) refers to pll.o(i.PLL_Init) for PLL_Init
+    lcdtestmain.o(i.main2) refers to ssd2119.o(i.LCD_Init) for LCD_Init
+    lcdtestmain.o(i.main2) refers to random.o(.text) for Random_Init
+    lcdtestmain.o(i.main2) refers to ssd2119.o(i.Touch_Init) for Touch_Init
+    lcdtestmain.o(i.main2) refers to lcdtestmain.o(i.touchDebug) for touchDebug
+    lcdtestmain.o(i.printfTest) refers to ssd2119.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcdtestmain.o(i.printfTest) refers to ssd2119.o(i.printf) for printf
+    lcdtestmain.o(i.printfTest) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.sizeofStuff) refers to ssd2119.o(i.printf) for printf
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.Touch_ReadY) for Touch_ReadY
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.Touch_ReadX) for Touch_ReadX
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.Touch_ReadZ1) for Touch_ReadZ1
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.Touch_GetCoords) for Touch_GetCoords
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.LCD_Goto) for LCD_Goto
+    lcdtestmain.o(i.touchDebug) refers to ssd2119.o(i.printf) for printf
+    lcdtestmain.o(i.touchDebug) refers to lcdtestmain.o(.data) for .data
+    lcdtestmain.o(i.touchDebug) refers to lcdtestmain.o(.constdata) for .constdata
+    nokia5110.o(i.Nokia5110_Clear) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_Clear) refers to nokia5110.o(i.Nokia5110_SetCursor) for Nokia5110_SetCursor
+    nokia5110.o(i.Nokia5110_DrawFullImage) refers to nokia5110.o(i.Nokia5110_SetCursor) for Nokia5110_SetCursor
+    nokia5110.o(i.Nokia5110_DrawFullImage) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_Init) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_OutChar) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    nokia5110.o(i.Nokia5110_OutChar) refers to nokia5110.o(.constdata) for .constdata
+    nokia5110.o(i.Nokia5110_OutString) refers to nokia5110.o(i.Nokia5110_OutChar) for Nokia5110_OutChar
+    nokia5110.o(i.Nokia5110_OutUDec) refers to nokia5110.o(i.Nokia5110_OutString) for Nokia5110_OutString
+    nokia5110.o(i.Nokia5110_OutUDec) refers to nokia5110.o(i.Nokia5110_OutChar) for Nokia5110_OutChar
+    nokia5110.o(i.Nokia5110_SetCursor) refers to nokia5110.o(i.lcdwrite) for lcdwrite
+    tiva_accelerometer.o(i.main) refers to nokia5110.o(i.Nokia5110_Init) for Nokia5110_Init
+    tiva_accelerometer.o(i.main) refers to adxl345_accelerometer.o(i.init_ADXL345_Accelerometer) for init_ADXL345_Accelerometer
+    tiva_accelerometer.o(i.main) refers to nokia5110.o(i.Nokia5110_Clear) for Nokia5110_Clear
+    tiva_accelerometer.o(i.main) refers to nokia5110.o(i.Nokia5110_SetCursor) for Nokia5110_SetCursor
+    tiva_accelerometer.o(i.main) refers to nokia5110.o(i.Nokia5110_OutString) for Nokia5110_OutString
+    tiva_accelerometer.o(i.main) refers to adxl345_accelerometer.o(i.getAccelerometer_ID) for getAccelerometer_ID
+    tiva_accelerometer.o(i.main) refers to adxl345_accelerometer.o(i.SetPowerMode) for SetPowerMode
+    tiva_accelerometer.o(i.main) refers to adxl345_accelerometer.o(i.getAcceleration_X) for getAcceleration_X
+    tiva_accelerometer.o(i.main) refers to nokia5110.o(i.Nokia5110_OutUDec) for Nokia5110_OutUDec
+    tiva_accelerometer.o(i.main) refers to adxl345_accelerometer.o(i.getAcceleration_Y) for getAcceleration_Y
+    tiva_accelerometer.o(i.main) refers to adxl345_accelerometer.o(i.getAcceleration_Z) for getAcceleration_Z
+    adxl345_accelerometer.o(i.SetPowerMode) refers to tiva_i2c.o(i.readI2C0) for readI2C0
+    adxl345_accelerometer.o(i.SetPowerMode) refers to tiva_i2c.o(i.writeI2C0) for writeI2C0
+    adxl345_accelerometer.o(i.getAcceleration_X) refers to adxl345_accelerometer.o(i.getAcceleration_rawX) for getAcceleration_rawX
+    adxl345_accelerometer.o(i.getAcceleration_X) refers to dflti.o(.text) for __aeabi_i2d
+    adxl345_accelerometer.o(i.getAcceleration_X) refers to dmul.o(.text) for __aeabi_dmul
+    adxl345_accelerometer.o(i.getAcceleration_X) refers to dfixi.o(.text) for __aeabi_d2iz
+    adxl345_accelerometer.o(i.getAcceleration_Y) refers to adxl345_accelerometer.o(i.getAcceleration_rawY) for getAcceleration_rawY
+    adxl345_accelerometer.o(i.getAcceleration_Y) refers to dflti.o(.text) for __aeabi_i2d
+    adxl345_accelerometer.o(i.getAcceleration_Y) refers to dmul.o(.text) for __aeabi_dmul
+    adxl345_accelerometer.o(i.getAcceleration_Y) refers to dfixi.o(.text) for __aeabi_d2iz
+    adxl345_accelerometer.o(i.getAcceleration_Z) refers to adxl345_accelerometer.o(i.getAcceleration_rawZ) for getAcceleration_rawZ
+    adxl345_accelerometer.o(i.getAcceleration_Z) refers to dflti.o(.text) for __aeabi_i2d
+    adxl345_accelerometer.o(i.getAcceleration_Z) refers to dmul.o(.text) for __aeabi_dmul
+    adxl345_accelerometer.o(i.getAcceleration_Z) refers to dfixi.o(.text) for __aeabi_d2iz
+    adxl345_accelerometer.o(i.getAcceleration_rawX) refers to tiva_i2c.o(i.readI2C0) for readI2C0
+    adxl345_accelerometer.o(i.getAcceleration_rawX) refers to adxl345_accelerometer.o(.data) for .data
+    adxl345_accelerometer.o(i.getAcceleration_rawY) refers to tiva_i2c.o(i.readI2C0) for readI2C0
+    adxl345_accelerometer.o(i.getAcceleration_rawY) refers to adxl345_accelerometer.o(.data) for .data
+    adxl345_accelerometer.o(i.getAcceleration_rawZ) refers to tiva_i2c.o(i.readI2C0) for readI2C0
+    adxl345_accelerometer.o(i.getAcceleration_rawZ) refers to adxl345_accelerometer.o(.data) for .data
+    adxl345_accelerometer.o(i.getAccelerometer_ID) refers to tiva_i2c.o(i.readI2C0) for readI2C0
+    adxl345_accelerometer.o(i.init_ADXL345_Accelerometer) refers to tiva_i2c.o(i.initI2C0) for initI2C0
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixi.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to tiva_accelerometer.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to tiva_accelerometer.o(i.main) for main
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup.o(HEAP), (0 bytes).
+    Removing startup.o(.text), (28 bytes).
+    Removing pll.o(i.PLL_Init), (96 bytes).
+    Removing ssd2119.o(i.ADC_Init), (120 bytes).
+    Removing ssd2119.o(i.ADC_Read), (28 bytes).
+    Removing ssd2119.o(i.ADC_SetChannel), (48 bytes).
+    Removing ssd2119.o(i.LCD_ColorFill), (20 bytes).
+    Removing ssd2119.o(i.LCD_DrawBMP), (340 bytes).
+    Removing ssd2119.o(i.LCD_DrawCircle), (246 bytes).
+    Removing ssd2119.o(i.LCD_DrawFilledCircle), (204 bytes).
+    Removing ssd2119.o(i.LCD_DrawFilledRect), (80 bytes).
+    Removing ssd2119.o(i.LCD_DrawImage), (204 bytes).
+    Removing ssd2119.o(i.LCD_DrawLine), (144 bytes).
+    Removing ssd2119.o(i.LCD_DrawPixel), (48 bytes).
+    Removing ssd2119.o(i.LCD_DrawPixelRGB), (32 bytes).
+    Removing ssd2119.o(i.LCD_DrawRect), (80 bytes).
+    Removing ssd2119.o(i.LCD_GPIOInit), (148 bytes).
+    Removing ssd2119.o(i.LCD_Goto), (24 bytes).
+    Removing ssd2119.o(i.LCD_Init), (420 bytes).
+    Removing ssd2119.o(i.LCD_PrintBinary), (124 bytes).
+    Removing ssd2119.o(i.LCD_PrintChar), (164 bytes).
+    Removing ssd2119.o(i.LCD_PrintFloat), (132 bytes).
+    Removing ssd2119.o(i.LCD_PrintHex), (92 bytes).
+    Removing ssd2119.o(i.LCD_PrintInteger), (90 bytes).
+    Removing ssd2119.o(i.LCD_PrintString), (26 bytes).
+    Removing ssd2119.o(i.LCD_SetCursor), (12 bytes).
+    Removing ssd2119.o(i.LCD_SetTextColor), (16 bytes).
+    Removing ssd2119.o(i.LCD_WriteCommand), (64 bytes).
+    Removing ssd2119.o(i.LCD_WriteData), (64 bytes).
+    Removing ssd2119.o(i.Touch_BeginWaitForTouch), (168 bytes).
+    Removing ssd2119.o(i.Touch_GetCoords), (80 bytes).
+    Removing ssd2119.o(i.Touch_Init), (60 bytes).
+    Removing ssd2119.o(i.Touch_ReadX), (224 bytes).
+    Removing ssd2119.o(i.Touch_ReadY), (200 bytes).
+    Removing ssd2119.o(i.Touch_ReadZ1), (184 bytes).
+    Removing ssd2119.o(i.Touch_ReadZ2), (200 bytes).
+    Removing ssd2119.o(i.abs), (8 bytes).
+    Removing ssd2119.o(i.convertColor), (16 bytes).
+    Removing ssd2119.o(i.printf), (128 bytes).
+    Removing ssd2119.o(.constdata), (540 bytes).
+    Removing ssd2119.o(.data), (1 bytes).
+    Removing ssd2119.o(.data), (10 bytes).
+    Removing random.o(DATA), (4 bytes).
+    Removing random.o(.text), (40 bytes).
+    Removing lcdtestmain.o(i.BWWaitFill), (72 bytes).
+    Removing lcdtestmain.o(i.BlastChars), (32 bytes).
+    Removing lcdtestmain.o(i.LineSpin), (252 bytes).
+    Removing lcdtestmain.o(i.MovingColorBars), (100 bytes).
+    Removing lcdtestmain.o(i.PrintAsciiChars), (28 bytes).
+    Removing lcdtestmain.o(i.Random4BPPTestSprite), (56 bytes).
+    Removing lcdtestmain.o(i.RandomCircle), (68 bytes).
+    Removing lcdtestmain.o(i.RandomColorFill), (58 bytes).
+    Removing lcdtestmain.o(i.RandomRectangles), (136 bytes).
+    Removing lcdtestmain.o(i.TestStringOutput), (24 bytes).
+    Removing lcdtestmain.o(i.charTest), (28 bytes).
+    Removing lcdtestmain.o(i.main2), (32 bytes).
+    Removing lcdtestmain.o(i.printfTest), (104 bytes).
+    Removing lcdtestmain.o(i.sizeofStuff), (200 bytes).
+    Removing lcdtestmain.o(i.touchDebug), (68 bytes).
+    Removing lcdtestmain.o(.constdata), (305 bytes).
+    Removing lcdtestmain.o(.data), (28 bytes).
+    Removing lcdtestmain.o(.data), (4 bytes).
+    Removing lcdtestmain.o(.data), (4 bytes).
+    Removing nokia5110.o(i.Nokia5110_DrawFullImage), (34 bytes).
+    Removing adxl345_accelerometer.o(i.getAccelerationData), (4 bytes).
+    Removing adxl345_accelerometer.o(i.getPitch), (4 bytes).
+    Removing adxl345_accelerometer.o(i.getRoll), (4 bytes).
+    Removing f2d.o(.text), (38 bytes).
+
+68 unused section(s) (total 6640 bytes) removed from the image.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000d04, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00000cfc, Max: 0x00040000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000294   Code   RO            3    RESET               startup.o
+    0x00000294   0x00000000   Code   RO          580  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000294   0x00000004   Code   RO          595    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000298   0x00000004   Code   RO          598    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0000029c   0x00000000   Code   RO          600    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0000029c   0x00000000   Code   RO          602    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0000029c   0x00000008   Code   RO          603    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x000002a4   0x00000000   Code   RO          605    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x000002a4   0x00000000   Code   RO          607    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x000002a4   0x00000004   Code   RO          596    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x000002a8   0x000000e4   Code   RO          587    .text               mf_w.l(dmul.o)
+    0x0000038c   0x00000022   Code   RO          589    .text               mf_w.l(dflti.o)
+    0x000003ae   0x0000003e   Code   RO          591    .text               mf_w.l(dfixi.o)
+    0x000003ec   0x00000020   Code   RO          609    .text               mc_w.l(llushr.o)
+    0x0000040c   0x00000000   Code   RO          611    .text               mc_w.l(iusefp.o)
+    0x0000040c   0x000000be   Code   RO          612    .text               mf_w.l(depilogue.o)
+    0x000004ca   0x00000002   PAD
+    0x000004cc   0x00000024   Code   RO          614    .text               mc_w.l(init.o)
+    0x000004f0   0x0000001e   Code   RO          616    .text               mc_w.l(llshl.o)
+    0x0000050e   0x00000002   PAD
+    0x00000510   0x0000000c   Code   RO           37    i.GPIOPortA_Handler  ssd2119.o
+    0x0000051c   0x00000022   Code   RO          378    i.Nokia5110_Clear   nokia5110.o
+    0x0000053e   0x00000002   PAD
+    0x00000540   0x00000118   Code   RO          380    i.Nokia5110_Init    nokia5110.o
+    0x00000658   0x00000038   Code   RO          381    i.Nokia5110_OutChar  nokia5110.o
+    0x00000690   0x00000016   Code   RO          382    i.Nokia5110_OutString  nokia5110.o
+    0x000006a6   0x00000002   PAD
+    0x000006a8   0x000000ac   Code   RO          383    i.Nokia5110_OutUDec  nokia5110.o
+    0x00000754   0x0000002e   Code   RO          384    i.Nokia5110_SetCursor  nokia5110.o
+    0x00000782   0x00000030   Code   RO          501    i.SetPowerMode      adxl345_accelerometer.o
+    0x000007b2   0x00000002   PAD
+    0x000007b4   0x00000028   Code   RO          503    i.getAcceleration_X  adxl345_accelerometer.o
+    0x000007dc   0x00000028   Code   RO          504    i.getAcceleration_Y  adxl345_accelerometer.o
+    0x00000804   0x00000028   Code   RO          505    i.getAcceleration_Z  adxl345_accelerometer.o
+    0x0000082c   0x00000024   Code   RO          506    i.getAcceleration_rawX  adxl345_accelerometer.o
+    0x00000850   0x00000024   Code   RO          507    i.getAcceleration_rawY  adxl345_accelerometer.o
+    0x00000874   0x00000024   Code   RO          508    i.getAcceleration_rawZ  adxl345_accelerometer.o
+    0x00000898   0x00000008   Code   RO          509    i.getAccelerometer_ID  adxl345_accelerometer.o
+    0x000008a0   0x0000006c   Code   RO          456    i.initI2C0          tiva_i2c.o
+    0x0000090c   0x00000004   Code   RO          512    i.init_ADXL345_Accelerometer  adxl345_accelerometer.o
+    0x00000910   0x00000034   Code   RO          385    i.lcdwrite          nokia5110.o
+    0x00000944   0x00000124   Code   RO          435    i.main              tiva_accelerometer.o
+    0x00000a68   0x00000058   Code   RO          457    i.readI2C0          tiva_i2c.o
+    0x00000ac0   0x0000005c   Code   RO          458    i.writeI2C0         tiva_i2c.o
+    0x00000b1c   0x000001e0   Data   RO          386    .constdata          nokia5110.o
+    0x00000cfc   0x00000000   Data   RO          618    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000408, Max: 0x00008000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000006   Data   RW          513    .data               adxl345_accelerometer.o
+    0x20000006   0x00000002   PAD
+    0x20000008   0x00000400   Zero   RW            1    STACK               startup.o
+

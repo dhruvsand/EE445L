@@ -1,0 +1,22 @@
+Dependencies for Project 'Lab2', Target 'ADCSWTrigger': (DO NOT MODIFY !)
+F (.\startup.s)(0x5A6450E0)(--cpu Cortex-M4 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\ADCSWTrigger.c)(0x5A727902)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\adcswtrigger.o --omf_browse .\adcswtrigger.crf --depend .\adcswtrigger.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (../inc/tm4c123gh6pm.h)(0x5A6450FC)
+F (.\ADCTestMain.c)(0x5A79145A)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\adctestmain.o --omf_browse .\adctestmain.crf --depend .\adctestmain.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C87C24)
+I (ADCSWTrigger.h)(0x5A6450E0)
+I (../inc/tm4c123gh6pm.h)(0x5A6450FC)
+I (PLL.h)(0x5A6450E0)
+I (ST7735.h)(0x5A78F9FC)
+F (.\PLL.c)(0x5A6450E0)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (PLL.h)(0x5A6450E0)
+I (../inc/tm4c123gh6pm.h)(0x5A6450FC)
+F (.\ST7735.c)(0x5A78F9FC)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\st7735.o --omf_browse .\st7735.crf --depend .\st7735.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C87C24)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C87C24)
+I (ST7735.h)(0x5A78F9FC)
+I (..\inc/tm4c123gh6pm.h)(0x5A6450FC)
+F (.\ST7735.h)(0x5A78F9FC)()

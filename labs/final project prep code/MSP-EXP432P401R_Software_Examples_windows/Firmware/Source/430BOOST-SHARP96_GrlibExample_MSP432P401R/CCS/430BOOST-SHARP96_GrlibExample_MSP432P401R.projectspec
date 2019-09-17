@@ -1,0 +1,17 @@
+<projectSpec>
+  <project
+    compilerBuildOptions="-I${PROJECT_LOC} -I${PROJECT_LOC}/grlib -I${PROJECT_LOC}/fonts -I${PROJECT_LOC}/LcdDriver -I${PROJECT_LOC}/images -I${PROJECT_LOC}/driverlib/MSP432P4xx"
+    device="Cortex M.MSP432P401R"
+    name="430BOOST-SHARP96_GrlibExample_MSP432P401R"
+    enableHexTool="true"
+    linkerCommandFile="msp432p401r.cmd" >
+    <file action="copy" path="../driverlib" />
+    <file action="copy" path="../fonts" />
+    <file action="copy" path="../grlib" />
+    <file action="copy" path="../images" />
+    <file action="copy" path="../LcdDriver" />
+    <file action="copy" path="../main.c" openOnCreation="true" />
+    <file action="copy" path="startup_msp432p401r_ccs.c" overwriteExisting="true" />
+    <file action="copy" path="system_msp432p401r.c" overwriteExisting="true" />
+  </project>
+</projectSpec>
